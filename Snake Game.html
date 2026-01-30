@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Background video -->
+  <video id="bgVideo" muted loop playsinline>
+    <source src="background.mp4" type="video/mp4">
+  </video>
+
+  <!-- UI -->
+  <div class="ui">
+    <h1>🐍 Snake Game by Kenneth</h1>
+    <div class="scoreboard">
+      Score: <span id="score">0</span>
+    </div>
+    <button id="startBtn">Start Game</button>
+  </div>
+
+  <!-- Canvas -->
+  <canvas id="game"></canvas>
+
+  <!-- Game Over Message -->
+  <div id="gameOverMessage">
+    <h2>MASAKIT?</h2>
+    <p>Your Score: <span id="finalScore">0</span></p>
+    <p><b>laro ka ulit</b> para masaktan kapa</p>
+  </div>
+
+  <!-- Background music -->
+  <audio id="bgMusic" loop>
+    <source src="bgmusic.mp3" type="audio/mpeg">
+  </audio>
+
+</body>
+</html>
